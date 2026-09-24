@@ -40,7 +40,7 @@ Built with **Java, Spring Boot, MongoDB, HTML5, CSS3, and JavaScript**, SRMS pro
 * Git & GitHub
 * ChatGPT for AI-assisted development
 
-  ## 📌 Project Highlights
+## 📌 Project Highlights
 
 ### Student Result Management
 
