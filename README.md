@@ -118,3 +118,39 @@ Repository
  ↓
 MongoDB
 ```
+
+## 📁 Project Structure
+
+```text
+SRMS/
+│
+├── src/
+│   └── main/
+│       ├── java/
+│       │   └── ...
+│       │
+│       └── resources/
+│           └── application.properties
+│
+├── frontend/
+│   ├── index.html
+│   ├── css/
+│   └── js/
+│
+├── pom.xml
+├── README.md
+└── .gitignore
+```
+
+> The exact package and folder names may vary depending on the current project structure.
+
+### Main Backend Components
+
+| Component         | Responsibility                                  |
+| ----------------- | ----------------------------------------------- |
+| **Controller**    | Handles HTTP requests and API endpoints         |
+| **Service**       | Contains application/business logic             |
+| **Repository**    | Handles database operations                     |
+| **Model/Entity**  | Represents student and result data              |
+| **Configuration** | Contains application and database configuration |
+
