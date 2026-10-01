@@ -197,3 +197,76 @@ Content-Type: application/json
 
 > Update the endpoint names and request/response fields above to match the actual implementation in the project.
 
+
+## How to run
+
+Finally, add proper setup instructions:
+
+## ⚙️ Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+* Java 17+
+* Maven
+* MongoDB
+* Git
+
+### 1. Clone the Repository
+
+```bash
+git clone <your-repository-url>
+cd SRMS
+```
+
+### 2. Configure MongoDB
+
+Make sure MongoDB is running locally.
+
+Update the MongoDB configuration in:
+
+```text
+src/main/resources/application.properties
+```
+
+Example:
+
+```properties
+spring.data.mongodb.uri=mongodb://localhost:27017/srms
+```
+
+### 3. Build the Application
+
+```bash
+mvn clean install
+```
+
+### 4. Run the Application
+
+```bash
+mvn spring-boot:run
+```
+
+The application will start on the configured Spring Boot port.
+
+### 5. Open the Application
+
+Open the frontend in your browser or access the configured application URL.
+
+---
+
+## 🧪 Testing
+
+You can test the REST APIs using tools such as:
+
+* Postman
+* Browser
+* cURL
+
+Example:
+
+```bash
+curl http://localhost:8080/api/students
+```
+
