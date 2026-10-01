@@ -154,3 +154,46 @@ SRMS/
 | **Model/Entity**  | Represents student and result data              |
 | **Configuration** | Contains application and database configuration |
 
+
+## 🔌 REST API
+
+The backend exposes RESTful APIs for managing student and result information.
+
+### Student APIs
+
+| Method   | Endpoint             | Description            |
+| -------- | -------------------- | ---------------------- |
+| `GET`    | `/api/students`      | Get all students       |
+| `GET`    | `/api/students/{id}` | Get student by ID      |
+| `POST`   | `/api/students`      | Create a student       |
+| `PUT`    | `/api/students/{id}` | Update student details |
+| `DELETE` | `/api/students/{id}` | Delete a student       |
+
+### Example Request
+
+```http
+POST /api/students
+Content-Type: application/json
+```
+
+```json
+{
+  "name": "Rahul Sharma",
+  "rollNumber": "SRMS101",
+  "course": "Computer Science"
+}
+```
+
+### Example Response
+
+```json
+{
+  "id": "64abc123",
+  "name": "Rahul Sharma",
+  "rollNumber": "SRMS101",
+  "course": "Computer Science"
+}
+```
+
+> Update the endpoint names and request/response fields above to match the actual implementation in the project.
+
