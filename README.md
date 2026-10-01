@@ -65,3 +65,56 @@ Designed backend APIs with typical response times of **under 200ms** during deve
 ### AI-Assisted Development
 
 Used **ChatGPT** as a development assistant for debugging, implementation guidance, code refinement, and documentation, helping reduce development time while maintaining a clean code structure.
+
+
+## 🏗️ Application Architecture
+
+The application follows a layered MVC-style structure:
+
+```text
+                    ┌─────────────────────┐
+                    │     Web Browser     │
+                    │ HTML/CSS/JavaScript │
+                    └──────────┬──────────┘
+                               │
+                               │ HTTP Requests
+                               ▼
+                    ┌─────────────────────┐
+                    │    REST Controller  │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │    Service Layer    │
+                    │ Business Logic      │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │   Repository Layer  │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │      MongoDB        │
+                    │    Database         │
+                    └─────────────────────┘
+```
+
+### Request Flow
+
+```text
+User
+ ↓
+Frontend
+ ↓
+REST API
+ ↓
+Controller
+ ↓
+Service
+ ↓
+Repository
+ ↓
+MongoDB
+```
